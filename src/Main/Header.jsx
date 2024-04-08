@@ -61,7 +61,7 @@ function Header() {
         <div className='hidden md:block lg:block fixed top-0'>
             <nav className='border w-72 pl-6 rounded-lg m-3 md:w-52 lg:w-72'>
                 <ul className='md:flex flex-col text-white'>
-                <NavLink to='/sounds//'
+                <NavLink to='/sounds/home'
                         className={({isActive}) =>
                                       `${isActive ? "text-blue-600" : "text-gray-500"}`
                                 }
