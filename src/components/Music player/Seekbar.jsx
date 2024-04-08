@@ -129,7 +129,13 @@ const calculateTime = (secs) => {
 
   return (
     <div className=" text-white bg-chose-30 w-lvw fixed bottom-11 h-11 rounded-md lg:h-20 lg:fixed lg:bottom-0 lg:bg-black">
-      <audio ref={audioPlayer} src={currentSong} volume={volume} type="audio/mpeg" preload = 'metadata'/>       
+      <audio 
+      ref={audioPlayer} 
+      src={currentSong} 
+      volume={volume} 
+      type="audio/mpeg" 
+      preload = 'metadata'
+      />       
       <ul className='flex justify-between items-center p-3 h-full w-lvw'>
         <li className='flex w-fit lg:border h-16 lg:flex items-center lg:w-60'>
           <img className='w-10 h-10 lg:w-16 lg:h-16 '/>

@@ -2,8 +2,6 @@ import React,{ useState,useEffect } from 'react'
 
 function Discover(props) {
 
-
-
   return (
     <div>
       <div className='mt-5 h-fit w-fit'>
@@ -18,7 +16,7 @@ function Discover(props) {
             <p className='text-slate-800 mt-4'>{props.title}</p>              
           </li>
         </ul>
-      </div>    
+      </div>   
     </div>  
   )
 }

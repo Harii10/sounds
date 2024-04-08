@@ -32,7 +32,7 @@ export default {
           70:'#B22727',
           80:'#3E6D9C'
         }
-      }
+      },
     },
   },
   plugins: [],

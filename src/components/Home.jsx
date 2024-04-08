@@ -85,29 +85,30 @@ function Home() {
                 </div>  
             </div>       
         </main>
-        <h3 className='text-white text-2xl font-bold mt-8 ml-1 lg:mt-3 pl-2 lg:ml-80'>Discover</h3>
-        <div className='flex gap-6 overflow-x-auto w-lvw h-52 pl-2 ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' id='List'>
+        <h3 className='text-white text-2xl font-bold mt-8 ml-1 lg:mt-3 pl-2 lg:ml-80'>
+        Discover</h3>
+        <div className='flex gap-6 overflow-x-auto w-lvw h-52 pl-2 ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' id='List' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
             
             {discover}
         </div>
         
         <h3 className='text-white text-2xl font-bold mt-8 ml-1 lg:mt-3 pl-2 lg:ml-80'>Popular Albums</h3>
-        <div className='flex gap-6 overflow-x-auto w-lvw h-52 pl-2 ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' id='List'>
+        <div className='flex gap-6 overflow-x-auto w-lvw h-52 pl-2 ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' id='List'style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
             {albums}
         </div>
         
         <h3 className='text-white text-2xl font-bold mt-2 pl-2 lg:ml-80'>Charts</h3>
-        <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6'>
+        <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
             {charts}
         </div>
 
         <h3 className='text-white text-2xl font-bold mt-3 pl-2 lg:ml-80'>Popular Artists</h3>
-        <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:my-5 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6'>
+        <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:my-5 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
             {artists}
         </div>
 
         <h3 className='text-white text-2xl font-bold mt-2 pl-2 lg:ml-80'>Podcasts</h3>
-        <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6'>
+        <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
             {podcasts}
         </div>
 
