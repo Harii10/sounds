@@ -5,6 +5,22 @@
     <link rel="icon" type="image/svg+xml"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waves</title>
+    <!-- To fix 404 error while refresh -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+
   </head>
   <body class="h-lvh w-lvw bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black overflow-x-hidden overflow-y-auto scroll-smooth text-white">
     <div id="root" class="h-lvh w-lvw bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black overflow-x-hidden overflow-y-auto scroll-smooth text-white"></div>
