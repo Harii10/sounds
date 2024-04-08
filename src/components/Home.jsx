@@ -5,7 +5,7 @@ import Artists from '../Main/Artists'
 import PopularAlbums from '../Main/PopularAlbums'
 import Charts from '../Main/Charts'
 import Podcasts from '../Main/Podcasts'
-import Seekbar from './Music player/Seekbar'
+import PlayBackPlayer from './Music player/PlyBackPlayer'
 
 
 function Home() {
@@ -113,7 +113,7 @@ function Home() {
         </div>
 
         <div>
-            <Seekbar/>
+            <PlayBackPlayer/>
         </div>
         
         
