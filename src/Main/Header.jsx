@@ -12,7 +12,7 @@ function Header() {
         <nav className=''>
             <ul className='flex justify-between inset-x-0 fixed bottom-0 w-full text-white h-11 bg-black
             '>
-                <NavLink to='home'
+                <NavLink to='/sounds/home'
                     className={({isActive}) =>
                                       `duration-200 ${isActive ?
                                       "text-blue-600" : "text-gray-500"}`
@@ -27,7 +27,7 @@ function Header() {
                     </li>
                 </NavLink>
                 
-                <NavLink to='search'
+                <NavLink to='/sounds/search'
                     className={({isActive}) =>
                                       `duration-200 ${isActive ?
                                       "text-blue-600" : "text-gray-500"}`
@@ -40,7 +40,7 @@ function Header() {
                     </li>
                 </NavLink>
 
-                <NavLink to='library'
+                <NavLink to='/sounds/library'
                     className={({isActive}) =>
                                       `duration-200 ${isActive ?
                                       "text-blue-600" : "text-gray-500"}`
@@ -61,7 +61,7 @@ function Header() {
         <div className='hidden md:block lg:block fixed top-0'>
             <nav className='border w-72 pl-6 rounded-lg m-3 md:w-52 lg:w-72'>
                 <ul className='md:flex flex-col text-white'>
-                <NavLink to='/'
+                <NavLink to='/sounds//'
                         className={({isActive}) =>
                                       `${isActive ? "text-blue-600" : "text-gray-500"}`
                                 }
@@ -75,7 +75,7 @@ function Header() {
                     </li>
                 </NavLink>
 
-                <NavLink to='search'
+                <NavLink to='/sounds/search'
                         className={({isActive}) =>
                                       `duration-200 ${isActive ?
                                       "text-blue-600" : "text-gray-500"}`
@@ -95,7 +95,7 @@ function Header() {
 
             <nav className='flex justify-between border h-5/6 w-72 pl-6 rounded-lg my-3 mx-3 md:w-52 lg:w-72'>
                 <ul className='hidden md:flex flex-col text-white my-4'>
-                    <NavLink to='library'
+                    <NavLink to='/sounds/library'
                     className={({isActive}) =>
                                       `duration-200 ${isActive ?
                                       "text-blue-600" : "text-gray-500"}`

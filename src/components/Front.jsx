@@ -12,7 +12,7 @@ function index() {
 
         
           <button className='text-2xl font-semibold m-3 p-5 rounded-full bg-gray-700 text-white lg:w-70 lg:hover:bg-slate-600'>
-            <Link to='home'>  
+            <Link to='/sounds/home'>  
               <span className=' tracking-widest'>Start Listening</span>
             </Link>   
           </button>

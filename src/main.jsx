@@ -11,22 +11,22 @@ import Front from './components/Front'
 
 const router = createBrowserRouter([
   {
-    path: '',
+    path: '/sounds/',
     element: <Front/>
   },
   {
-    path: '/',
+    path: '/sounds//',
     element : <Layout/>,
     children: [{
-      path: 'home',
+      path: '/sounds/home',
       element: <Home/>
     },
     {
-      path: 'search',
+      path: '/sounds/search',
       element: <Search/>
     },
     {
-      path: 'library',
+      path: '/sounds/library',
       element: <Mlibrary/>
     }
       
