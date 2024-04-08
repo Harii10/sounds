@@ -1,0 +1,8 @@
+
+.list::-webkit-scrollbar-thumb {
+        background-color: transparent;
+}
+
+.list{
+    scrollbar-color: transparent transparent;
+}
