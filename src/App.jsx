@@ -1,12 +1,8 @@
-
+import React from 'react'
 
 function App() {
-
-
   return (
-  <div className='bg-black'>
-    
-  </div>
+    <div>App</div>
   )
 }
 

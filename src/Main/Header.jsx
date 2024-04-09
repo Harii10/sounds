@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 function Header() {
-    
-  
+
+    const [open, setOpen] = useState(false)
 
   return (
-    <header>
+<header>
     <div className=' mt-3 h-0 md:hidden lg:hidden'>
         <nav className=''>
             <ul className='flex justify-between inset-x-0 fixed bottom-0 w-full text-white h-11 bg-black
@@ -57,7 +57,7 @@ function Header() {
     </div>
 
 
-
+    <div className={`${open ? 'hidden' : 'block'}`}>                          
         <div className='hidden md:block lg:block fixed top-0'>
             <nav className='border w-72 pl-6 rounded-lg m-3 md:w-52 lg:w-72'>
                 <ul className='md:flex flex-col text-white'>
@@ -141,7 +141,8 @@ function Header() {
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
+</header>
     
   )
 }

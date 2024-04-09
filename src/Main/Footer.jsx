@@ -1,9 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Link } from 'react-router-dom'
 import { FaLinkedinIn, FaRegCopyright,FaFile } from "react-icons/fa";
 import { VscGithubInverted } from "react-icons/vsc";
 
 function Footer() {
+    const [open, setOpen] = useState(false)
     //  links for my profile
     const portfolio = 'https://hexplorer07.github.io/My-Portfolio/'
     const landingPage = 'https://chandru070.github.io/first-Design/'
@@ -13,6 +14,7 @@ function Footer() {
     const github = 'https://github.com/Chandru070'
 
   return (
+<footer>
     <div className='hidden md:block lg:flex flex-col justify-center ml-80 text-gray-400  h-56 p-5 mt-14'>
         <div className=''>
                 <ul className='flex justify-center gap-16 '>
@@ -63,7 +65,9 @@ function Footer() {
         </div>
             
         </div>
-  )
+</footer>
+)
+
 }
 
 export default Footer

@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
 import Discover from '../Main/Discover'
 import {genres} from '../assets/constants'
 import Artists from '../Main/Artists'
@@ -8,7 +9,10 @@ import Podcasts from '../Main/Podcasts'
 import PlayBackPlayer from './Music player/PlyBackPlayer'
 
 
+
 function Home() {
+
+const [open, setOpen] = useState(false)
 
     const discover = genres.map((genre)=>
                 <Discover
@@ -44,6 +48,7 @@ function Home() {
 
   return (
     <div>
+        <div className={`${open ? 'hidden' : 'block' }`}>
         <main className=' text-white md:hidden lg:hidden'>
             <div>
                 <div className='p-4 pl-3'>
@@ -83,8 +88,9 @@ function Home() {
                         </li>
                     </ul>
                 </div>  
-            </div>       
-        </main>
+            </div>
+        </main>       
+        
         <h3 className='text-white text-2xl font-bold mt-8 ml-1 lg:mt-3 pl-2 lg:ml-80'>
         Discover</h3>
         <div className='flex gap-6 overflow-x-auto w-lvw h-52 pl-2 ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' id='List' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
@@ -111,10 +117,15 @@ function Home() {
         <div className='flex gap-6 overflow-x-auto w-lvw pl-2 h-52 overflow-y-hidden ml-1 lg:ml-80 lg:h-64 lg:w-80 lg:overflow-hidden lg:gap-x-6' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
             {podcasts}
         </div>
-
+        
+        </div>                
+        
         <div>
-            <PlayBackPlayer/>
+            <PlayBackPlayer props={{open, setOpen}}/>   
         </div>
+            
+  
+        
         
         
     </div>
